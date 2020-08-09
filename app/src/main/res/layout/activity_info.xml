@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:padding="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:background="@color/colorAccentTransparent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewAK"
+        android:text="@string/AK"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/image_name" />
+
+    <TextView
+        android:id="@+id/textViewPercAK"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewAK"
+        app:layout_constraintTop_toBottomOf="@+id/image_name" />
+
+    <TextView
+        android:id="@+id/textViewPercSignAK"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercAK"
+        app:layout_constraintTop_toBottomOf="@+id/image_name" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAK"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressTint="@color/colorAccent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignAK"
+        app:layout_constraintTop_toTopOf="@+id/textViewAK" />
+
+    <TextView
+        android:id="@+id/textViewBCC"
+        android:text="@string/BCC"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAK" />
+
+    <TextView
+        android:id="@+id/textViewPercBCC"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewBCC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAK" />
+
+    <TextView
+        android:id="@+id/textViewPercSignBCC"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercAK"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAK" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBCC"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignBCC"
+        app:layout_constraintTop_toTopOf="@+id/textViewBCC" />
+
+    <TextView
+        android:id="@+id/textViewBKL"
+        android:text="@string/BKL"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBCC" />
+
+
+    <TextView
+        android:id="@+id/textViewPercBKL"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewBKL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBCC" />
+
+    <TextView
+        android:id="@+id/textViewPercSignBKL"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercBKL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBCC" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBKL"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignBKL"
+        app:layout_constraintTop_toTopOf="@+id/textViewBKL" />
+
+    <TextView
+        android:id="@+id/textViewDF"
+        android:text="@string/DF"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBKL" />
+
+    <TextView
+        android:id="@+id/textViewPercDF"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewBKL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBKL" />
+
+    <TextView
+        android:id="@+id/textViewPercSignDF"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercBKL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBKL" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDF"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignDF"
+        app:layout_constraintTop_toTopOf="@+id/textViewDF" />
+
+    <TextView
+        android:id="@+id/textViewMEL"
+        android:text="@string/MEL"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDF" />
+
+    <TextView
+        android:id="@+id/textViewPercMEL"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewMEL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDF" />
+
+    <TextView
+        android:id="@+id/textViewPercSignMEL"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercMEL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDF" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMEL"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignMEL"
+        app:layout_constraintTop_toTopOf="@+id/textViewMEL" />
+
+    <TextView
+        android:id="@+id/textViewNV"
+        android:text="@string/NV"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMEL" />
+
+    <TextView
+        android:id="@+id/textViewPercNV"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMEL" />
+
+    <TextView
+        android:id="@+id/textViewPercSignNV"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercNV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMEL" />
+
+    <ProgressBar
+        android:id="@+id/progressBarNV"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignNV"
+        app:layout_constraintTop_toTopOf="@+id/textViewNV" />
+
+    <TextView
+        android:id="@+id/textViewSCC"
+        android:text="@string/SCC"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNV" />
+
+    <TextView
+        android:id="@+id/textViewPercSCC"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSCC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNV" />
+
+    <TextView
+        android:id="@+id/textViewPercSignSCC"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercNV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNV" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSCC"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignSCC"
+        app:layout_constraintTop_toTopOf="@+id/textViewSCC" />
+
+    <TextView
+        android:id="@+id/textViewVASC"
+        android:text="@string/VASC"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="@+id/image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSCC" />
+
+    <TextView
+        android:id="@+id/textViewPercVASC"
+        android:text="50"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewVASC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSCC" />
+
+    <TextView
+        android:id="@+id/textViewPercSignVASC"
+        android:text="%"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercVASC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSCC" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVASC"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPercSignVASC"
+        app:layout_constraintTop_toTopOf="@+id/textViewVASC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

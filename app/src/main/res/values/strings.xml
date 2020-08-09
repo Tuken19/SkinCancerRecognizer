@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SkinCancerRecognizer</string>
+    <string name="app_name_2">Skin Cancer Recognizer</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_info">Info</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_log_out">Logout</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="AK">AK</string>
+    <string name="BCC">BCC</string>
+    <string name="BKL">BKL</string>
+    <string name="DF">DF</string>
+    <string name="MEL">MEL</string>
+    <string name="NV">NV</string>
+    <string name="SCC">SCC</string>
+    <string name="VASC">VASC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

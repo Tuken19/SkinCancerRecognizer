@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:justificationMode="inter_word"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_cropped_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_view_camera_photo"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:padding="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/image_name_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_camera_photo"
+            android:background="@color/colorAccentTransparent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_view_AK_home"
+            android:text="@string/AK"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/image_name_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_AK_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_AK_home"
+            app:layout_constraintTop_toBottomOf="@+id/image_name_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_AK_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_AK_home"
+            app:layout_constraintTop_toBottomOf="@+id/image_name_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_AK_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_AK_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_AK_home" />
+
+        <TextView
+            android:id="@+id/text_view_BCC_home"
+            android:text="@string/BCC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_AK_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_BCC_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_BCC_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_AK_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_BCC_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_AK_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_AK_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_BCC_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_BCC_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_BCC_home" />
+
+        <TextView
+            android:id="@+id/text_view_BKL_home"
+            android:text="@string/BKL"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BCC_home" />
+
+
+        <TextView
+            android:id="@+id/text_view_perc_BKL_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_BKL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BCC_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_BKL_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_BKL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BCC_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_BKL_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_BKL_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_BKL_home" />
+
+        <TextView
+            android:id="@+id/text_view_DF_home"
+            android:text="@string/DF"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BKL_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_DF_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_BKL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BKL_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_DF_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_BKL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_BKL_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_DF_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_DF_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_DF_home" />
+
+        <TextView
+            android:id="@+id/text_view_MEL_home"
+            android:text="@string/MEL"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_DF_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_MEL_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_MEL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_DF_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_MEL_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_MEL_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_DF_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_MEL_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_MEL_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_MEL_home" />
+
+        <TextView
+            android:id="@+id/text_view_NV_home"
+            android:text="@string/NV"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_MEL_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_NV_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_NV_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_MEL_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_NV_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_NV_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_MEL_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_NV_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_NV_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_NV_home" />
+
+        <TextView
+            android:id="@+id/text_view_SCC_home"
+            android:text="@string/SCC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_NV_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_SCC_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_SCC_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_NV_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_SCC_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_NV_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_NV_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_SCC_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_SCC_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_SCC_home" />
+
+        <TextView
+            android:id="@+id/text_view_VASC_home"
+            android:text="@string/VASC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@+id/image_name_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_SCC_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_VASC_home"
+            android:text="50"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_VASC_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_SCC_home" />
+
+        <TextView
+            android:id="@+id/text_view_perc_sign_VASC_home"
+            android:text="%"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_SCC_home"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_SCC_home" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_VASC_home"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view_perc_sign_VASC_home"
+            app:layout_constraintTop_toTopOf="@+id/text_view_VASC_home" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

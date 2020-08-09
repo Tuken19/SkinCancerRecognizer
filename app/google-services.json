@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "544513938757",
+    "firebase_url": "https://skincancerrecognizer.firebaseio.com",
+    "project_id": "skincancerrecognizer",
+    "storage_bucket": "skincancerrecognizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544513938757:android:85ceae75b6583bdbad5a2c",
+        "android_client_info": {
+          "package_name": "com.example.skincancerrecognizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544513938757-rrmeh2u3777ukorkvkgl79m1mk2i8qut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf0H9ibBI1RUgSVTElSdRFE63q4kKVWo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544513938757-rrmeh2u3777ukorkvkgl79m1mk2i8qut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
